@@ -1,0 +1,6 @@
+Vio connects to 5V or 3V
+GND connects to GND
+Key connects to GND 
+RX connects to digital 2
+TX connects to digital 3 
+RST connects to digital 4
