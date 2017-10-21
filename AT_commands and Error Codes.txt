@@ -1,0 +1,59 @@
+
+
+
+AT command	Meaning
++CSMS		Check if SMS is supported
++CMGF		Instruct the GSM / GPRS modem to operate in SMS text mode
++CMGS		Send message // pasas el mesaje como argumento
++CMSS		Send message from storage // pasas el index del mesanje como parametro
++CMGW		Write message to memory
++CMGD		Delete message
++CMGC		Send command
++CMMS		More messages to send
++CNMI		New message indications
++CMGL		List messages
++CMGR		Read messages
++CNMA		New message acknowledgement
++CPMS		Set/ask for the storage address //ex: http://www.developershome.com/sms/cpmsCommand.asp
+
+Error code	Meaning
+300		Mobile equipment (ME) failure. Mobile equipment refers to the mobile device that communicates with the wireless network. Usually it is a mobile phone or GSM/GPRS modem. The SIM card is defined as a separate entity and is not part of mobile equipment.
+301		SMS service of mobile equipment (ME) is reserved. See +CMS error code 300 for the meaning of mobile equipment.
+302		The operation to be done by the AT command is not allowed.
+303		The operation to be done by the AT command is not supported.
+304		One or more parameter values assigned to the AT command are invalid. (For PDU mode)
+305		One or more parameter values assigned to the AT command are invalid. (For Text mode)
+310		There is no SIM card.
+311		The SIM card requires a PIN to operate. The AT command +CPIN (command name in text: Enter PIN) can be used to send the PIN to the SIM card.
+312		The SIM card requires a PH-SIM PIN to operate. The AT command +CPIN (command name in text: Enter PIN) can be used to send the PH-SIM PIN to the SIM card.
+313		SIM card failure.
+314		The SIM card is busy.
+315		The SIM card is wrong.
+316		The SIM card requires a PUK to operate. The AT command +CPIN (command name in text: Enter PIN) can be used to send the PUK to the SIM card.
+320		Memory/message storage failure.
+321		The memory/message storage index assigned to the AT command is invalid.
+322		The memory/message storage is out of space.
+330		The SMS center (SMSC) address is unknown.
+331		No network service is available.
+332		Network timeout occurred.
+340		There is no need to send message acknowledgement by the AT command +CNMA (command name in text: New Message Acknowledgement to ME/TA).
+500		An unknown error occurred.
+
+Only 6-10 SMS messages can be sent per minute
+
+[b] read the Battery V and % charged
+[C] read the SIM CCID
+[i] read RSSI
+[n] get Network status
+[c] make phone Call
+[h] Hang up phone
+[p] Pick up phone
+[N] Number of SMSs
+[r] Read SMS #
+[R] Read All SMS
+[d] Delete SMS #
+[s] Send SMS
+[t] Get network time
+[G] Enable GPRS
+[g] Disable GPRS
+[l] Query GSMLOC (GPRS)
